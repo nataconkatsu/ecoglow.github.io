@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ecoglow — Belleza Consciente</title>
+  <link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <div class="nav-logo">Eco<span>glow</span></div>
+    <ul class="nav-links">
+      <li><a href="#categorias">Categorías</a></li>
+      <li><a href="#productos">Marcas Destacadas</a></li>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#testimonios">Reseñas</a></li>
+    </ul>
+    <button class="nav-cta" onclick="toggleChat()">Consultar Asistente ✨</button>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-left">
+      <p class="hero-tag">✦ Descubrimiento &amp; Concientización</p>
+      <h1 class="hero-title">Tu piel merece lo <em>mejor</em> del planeta</h1>
+      <p class="hero-sub">Explorá y conocé marcas reales de maquillaje y skincare formuladas con ingredientes orgánicos, libres de crueldad animal y sustentables.</p>
+      <div class="hero-btns">
+        <a href="#productos" class="btn-primary" style="display:inline-block; text-align:center;">Ver marcas recomendadas</a>
+      </div>
+    </div>
+   <div class="hero-right">
+      <div class="hero-blob"></div>
+      <div class="hero-blob2"></div>
+      <div class="hero-right-inner">
+        <div class="hero-circle" style="overflow: hidden; background: white;">
+          <img src="https://i.ibb.co/W47CLd1F/maquillaje-foto-ini.jpg" alt="Belleza Consciente" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">100%</span>
+          <span class="stat-lbl">Orgánico</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">Reales</span>
+          <span class="stat-lbl">Marcas</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">Analizado</span>
+          <span class="stat-lbl">Con IA</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marquee-band">
+    <div class="marquee-track">
+      <span class="marquee-item"><span class="marquee-dot"></span>Libre de Parabenos</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>Cruelty Free</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>Packaging Reciclado</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>Certificado Orgánico</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>Vegano</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>Dermatológicamente Testeado</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>Sin Sulfatos</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>Libre de Parabenos</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>Cruelty Free</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>Packaging Reciclado</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>Certificado Orgánico</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>Vegano</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>Dermatológicamente Testeado</span>
+      <span class="marquee-item"><span class="marquee-dot"></span>Sin Sulfatos</span>
+    </div>
+  </div>
+
+  <section class="section-cats reveal" id="categorias">
+    <div class="section-header">
+      <p class="section-eyebrow">Explorá por segmento</p>
+      <h2 class="section-title">Ingredientes que Sanan</h2>
+    </div>
+    <div class="cats-grid">
+      <div class="cat-card" onclick="enviarPromptChat('Hola! Me gustaría saber más sobre los ingredientes naturales recomendados para Maquillaje consciente y libre de químicos.')" style="cursor: pointer;">
+        <div class="cat-card-bg"></div>
+        <div class="cat-icon">💄</div>
+        <div class="cat-label">
+          <h3>Maquillaje</h3>
+          <p>Bases · Labiales · Ojos</p>
+        </div>
+      </div>
+      <div class="cat-card" onclick="enviarPromptChat('Hola! ¿Qué ingredientes botánicos sanadores debería buscar en una rutina de Skincare orgánica?')" style="cursor: pointer;">
+        <div class="cat-card-bg"></div>
+        <div class="cat-icon">🌿</div>
+        <div class="cat-label">
+          <h3>Skincare</h3>
+          <p>Hidratantes · Serums · SPF</p>
+        </div>
+      </div>
+      <div class="cat-card" onclick="enviarPromptChat('Hola! Quiero info sobre Tratamientos naturales como mascarillas y exfoliantes limpios.')" style="cursor: pointer;">
+        <div class="cat-card-bg"></div>
+        <div class="cat-icon">✨</div>
+        <div class="cat-label">
+          <h3>Tratamientos</h3>
+          <p>Mascarillas · Exfoliantes</p>
+        </div>
+      </div>
+      <div class="cat-card" onclick="enviarPromptChat('Hola! ¿Qué aceites o cremas corporales naturales me recomendás para cuidar la barrera de la piel del Cuerpo?')" style="cursor: pointer;">
+        <div class="cat-card-bg"></div>
+        <div class="cat-icon">🧴</div>
+        <div class="cat-label">
+          <h3>Cuerpo</h3>
+          <p>Cremas · Aceites · Baño</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <section class="section-products reveal" id="productos">
+    <div class="products-top">
+      <div>
+        <p class="section-eyebrow">Líneas de Cosmética Auténtica</p>
+        <h2 class="section-title">Productos Recomendados</h2>
+      </div>
+    </div>
+    <div class="products-grid">
+      
+      <div class="product-card">
+        <div class="product-img">
+          <div class="product-badge">Weleda</div>
+          <img src="https://i.ibb.co/3571wzzY/weleda.png" alt="Skin Food Original" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div class="product-info">
+          <p class="product-brand-tag">Skincare Orgánico</p>
+          <h3 class="product-name">Skin Food Original</h3>
+          <p class="product-desc">Tratamiento ultra hidratante corporal y facial con extractos de pensamiento silvestre, caléndula y manzanilla.</p>
+          <div class="product-footer">
+            <span class="product-info-link" onclick="enviarPromptChat('Hola! Podrías darme información detallada sobre las propiedades y beneficios de Weleda Skin Food Original?')">Con conocer propiedades ✦</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img">
+          <div class="product-badge">Boti K</div>
+          <img src="https://i.ibb.co/4RF5RgRs/rosa.png" alt="Óleo de Rosa Mosqueta" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div class="product-info">
+          <p class="product-brand-tag">Aceites Esenciales</p>
+          <h3 class="product-name">Óleo de Rosa Mosqueta</h3>
+          <p class="product-desc">Puro, vegetal y natural. Ideal para la regeneración celular profunda y la atenuación de líneas de expresión.</p>
+          <div class="product-footer">
+            <span class="product-info-link" onclick="enviarPromptChat('Hola! ¿Cuáles son las propiedades analizadas del Óleo de Rosa Mosqueta de Boti K y cómo ayuda a la piel?')">Con conocer propiedades ✦</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <div class="product-img">
+          <div class="product-badge">Kahi Balm</div>
+          <img src="https://i.ibb.co/cSFP1VWb/multibalm.png" alt="Multi Balm Hidratante" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        <div class="product-info">
+          <p class="product-brand-tag">Tendencia Clean</p>
+          <h3 class="product-name">Multi Balm Hidratante</h3>
+          <p class="product-desc">Bálsamo en barra coreano formulado con complejos de salmón y aceites fermentados de Jeju para potenciar el colágeno.</p>
+          <div class="product-footer">
+            <span class="product-info-link" onclick="enviarPromptChat('Hola! Contame sobre el Multi Balm Hidratante de Kahi Balm, sus propiedades de colágeno y la tendencia Clean.')">Con conocer propiedades ✦</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="banner-eco reveal">
+    <div class="banner-carousel">
+      <button class="carousel-btn carousel-prev" onclick="moveCarousel(-1)">&#8592;</button>
+      <div class="carousel-track-wrapper">
+        <div class="carousel-track" id="carouselTrack">
+          <div class="carousel-slide"><img src="https://i.ibb.co/jC8JZkd/1.png" alt="Filosofía 1"></div>
+          <div class="carousel-slide"><img src="https://i.ibb.co/Xxgjzrz2/2.png" alt="Filosofía 2"></div>
+          <div class="carousel-slide"><img src="https://i.ibb.co/Qj107n93/3.png" alt="Filosofía 3"></div>
+        </div>
+      </div>
+      <button class="carousel-btn carousel-next" onclick="moveCarousel(1)">&#8594;</button>
+      <div class="carousel-dots" id="carouselDots">
+        <span class="carousel-dot active" onclick="goToSlide(0)"></span>
+        <span class="carousel-dot" onclick="goToSlide(1)"></span>
+        <span class="carousel-dot" onclick="goToSlide(2)"></span>
+      </div>
+    </div>
+  </div>
+
+  <section class="section-testimonials reveal" id="testimonios">
+    <div class="section-header">
+      <p class="section-eyebrow">Experiencias en la Comunidad</p>
+      <h2 class="section-title">Opiniones Reales</h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="t-stars">★★★★★</div>
+        <p class="t-text">"Poder subir una foto del dorso de mi crema y que el bot me explique qué es cada ingrediente químico me salvó la rutina."</p>
+        <div class="t-author">
+          <div class="t-avatar">👩</div>
+          <div>
+            <div class="t-name">Valentina M.</div>
+            <div class="t-role">Rosario, Argentina</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="t-stars">★★★★★</div>
+        <p class="t-text">"Me encanta que no te intenten vender nada. Las marcas que recomiendan como Weleda realmente cumplen lo que prometen."</p>
+        <div class="t-author">
+          <div class="t-avatar">👩‍🦱</div>
+          <div>
+            <div class="t-name">Luciana T.</div>
+            <div class="t-role">Buenos Aires</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="t-stars">★★★★★</div>
+        <p class="t-text">"Por fin un espacio limpio de publicidad agresiva enfocado 100% en educar sobre cosmética e ingredientes naturales."</p>
+        <div class="t-author">
+          <div class="t-avatar">🧑‍🦰</div>
+          <div>
+            <div class="t-name">Sofía R.</div>
+            <div class="t-role">Córdoba, Argentina</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-newsletter reveal">
+    <div class="nl-left">
+      <p class="section-eyebrow">✦ Comunidad Ecoglow</p>
+      <h2>Recibí guías de análisis e informes de botánica</h2>
+    </div>
+    <div class="nl-right">
+      <p>Suscribite a nuestro boletín informativo para enterarte de nuevos lanzamientos limpios de químicos y tips de botánica aplicada a la estética cutánea.</p>
+      
+      <form onsubmit="registrarEmail(event)">
+        <input type="email" id="nl-email" placeholder="tu@email.com" required />
+        <button type="submit">Unirme</button>
+      </form>
+</div> 
+</div> <footer id="nosotros">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="nav-logo">Eco<span>glow</span></div>
+        <p>Estética analítica, natural y responsable. Espacio de divulgación para el cuidado consciente de tu piel.</p>
+      </div>
+      <div class="eco-info">
+    <h4>🌿 Antes de comprar un cosmético</h4>
+    <p class="eco-texto">
+        Tomar decisiones informadas es el primer paso hacia una rutina de cuidado consciente.
+    </p>
+
+    <details>
+        <summary>¿Conoces los ingredientes que contiene?</summary>
+        <p>Los ingredientes determinan cómo actuará un producto sobre tu piel. Puedes consultar la lista INCI en el envase o en la página oficial. En EcoGlow te ayudamos a comprender su función, beneficios y posibles efectos.</p>
+    </details>
+
+    <details>
+        <summary>¿Es compatible con tu tipo de piel?</summary>
+        <p>Cada piel tiene necesidades diferentes. Conocer si tu piel es grasa, seca, mixta o sensible te ayudará a elegir productos realmente adecuados.</p>
+    </details>
+
+    <details>
+        <summary>¿Sus beneficios están respaldados por evidencia?</summary>
+        <p>No todas las promesas publicitarias cuentan con respaldo científico. En EcoGlow analizamos la información disponible para ayudarte a tomar decisiones más seguras.</p>
+    </details>
+
+    <details>
+        <summary>¿Sabes cómo utilizarlo correctamente?</summary>
+        <p>Leer las instrucciones y respetar la frecuencia de uso puede mejorar los resultados y evitar irritaciones.</p>
+    </details>
+
+    <details>
+        <summary>¿Realmente lo necesitas en tu rutina?</summary>
+        <p>Antes de comprar, identifica si buscas hidratación, tratar manchas, controlar el acné o reducir la sensibilidad. Una rutina simple suele ser más efectiva.</p>
+    </details>
+
+    <p class="eco-final">
+        <strong>En EcoGlow creemos que entender lo que aplicas sobre tu piel es tan importante como el producto en sí.</strong>
+    </p>
+    </div>
+  </div>
+    <div class="footer-bottom">
+      <p>© 2026 Ecoglow. Espacio Informativo y Educativo.</p>
+      <p class="footer-credits">Créditos a <span>Chicas en tecnología</span>: Sofia, Ursula, Jesica, Luz y Coral.</p>
+      <div class="footer-socials">
+        <div class="social-icon">𝕏</div>
+        <div class="social-icon">📷</div>
+        <div class="social-icon">▶</div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="chat-button" onclick="toggleChat()">🌿</div>
+
+  <div id="chat-container">
+    <div id="chat-header">
+        <span>Asistente Natural ✦ EcoGlow</span>
+        <span id="close-btn" onclick="toggleChat()">×</span>
+    </div>
+    
+    <div id="chat-box">
+        <div class="message bot-message">¡Hola! ¿Cómo puedo ayudarte hoy? Podés consultarme sobre rutinas o subir una foto de los ingredientes del dorso de tu cosmético para que analicemos su pureza juntos. Por cierto! tardo al principio alrededor de 15 minutos en analizar el contenido, dame tiempo 😉✨</div>
+    </div>
+    
+    <div id="preview-container">
+        <img id="img-preview" src="" alt="Preview">
+        <span style="font-size: 11px; color: var(--mid); flex: 1;">Imagen cargada lista para analizar</span>
+        <span id="remove-preview" onclick="clearImagePreview()">×</span>
+    </div>
+    
+    <div id="input-container">
+        <label for="file-input" class="file-label">📎</label>
+        <input type="file" id="file-input" accept="image/*" onchange="previewImage(event)">
+        
+        <input type="text" id="user-input" placeholder="Pregúntame algo..." onkeypress="handleKeyPress(event)">
+        <button id="send-btn" onclick="sendMessage()">➤</button>
+    </div>
+  </div>
+
+  <audio id="sound-send" src="tu-sonido-enviar.mp3" preload="auto"></audio>
+  <audio id="sound-receive" src="tu-sonido-recibir.mp3" preload="auto"></audio>
+
+  <script src="javascript.js"></script>
+</body>
+</html>
